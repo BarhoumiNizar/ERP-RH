@@ -1,0 +1,16 @@
+{%extends '::template.html.twig'%}
+{%block body%}
+{%block container%}
+<center>
+{%for note in notification%}
+{%if note.etat!=null%} 
+ <b style="font-size:24px">Demande:</b> 
+ <span style="font-size:20px">{{note.etat}}</span><br>
+			{%if note.etat=='refuse'%}
+		  <b style="font-size:24px">Cause: </b><span style="font-size:20px">{{note.cause}}</span><br>
+		 {%endif%}
+  {%endif%}
+{%endfor%}
+</center>
+{%endblock%}
+{%endblock%}

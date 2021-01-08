@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="" />
+  <meta name="title" content="" />
+  <meta name="description" content="" />
+<title>TOPNET</title>
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets  downloaded from exet.tk      // -->
+<!-- ////////////////////////////////// -->
+<link href="{{asset('bundles/pfe/admin/css/style.css')}}" type="text/css" rel="stylesheet" />
+<link href="{{asset('bundles/pfe/admin/css/slimbox2.css')}}" type="text/css" rel="stylesheet
+" />
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="{{asset('bundles/pfe/admin/js/jquery-1.3.2.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('bundles/pfe/admin/js/jquery.cycle.all.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('bundles/pfe/admin/js/main.js')}}"></script>
+<script type="text/javascript">
+   $(function(){     
+        $(' work').cycle({
+            timeout: 0,  // milliseconds between slide transitions (0 to disable auto advance)			
+            fx:      'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+			next: 	 ' next',
+			prev:    ' prev'			    
+        });				         
+     });
+</script>
+
+<script type="text/javascript" src="{{asset('bundles/pfe/admin/js/slimbox2.js')}}"></script>
+<script type="text/javascript" src="{{asset('bundles/pfe/admin/js/contact.js')}}"></script>
+<!--[if IE 6]>
+    <script type="text/javascript" src="{{asset('bundles/pfe/admin/js/dd_belated_png.js')}}"></script>
+	<script>DD_belatedPNG.fix(' bg-content-repeat1,  bg-content-repeat2,  bg-content-top,  bg-content-bottom');</script>
+<![endif]-->
+</head>
+<body>
+
+<div id="container">
+	<div id="content">
+		<div id="bg-content-top"></div><!-- end bg-content-top -->
+		<div id="bg-content-repeat1">
+		<div id="bg-content-repeat2">
+			<div id="main">
+				<div id="top">
+					<div id="logo" style="padding-top:20px"><img src="{{asset('bundles/pfe/admin/images/logo.gif')}}" width=75 height=75 alt="" /></div><!-- end logo -->
+					<div id="navtop">
+						<ul id="nav">
+							<a href="{{path('personnel_deconnexion')}}"  style="text-decoration:none">
+							<img src="{{asset('bundles/pfe/admin/images/deconnexion.png')}}" style="position:relative;left:50px">
+							<span style="position:relative; top:15px; left:0px;text-decoration:none; color:red">Déconnexion</span></a>
+							</li>
+							{#<li class="nav2"><a href="#" title="about"></a></li>
+							<li class="nav3"><a href="#" title="work"></a></li>
+							<li class="nav4"><a href="#" title="social network"></a></li>
+							<li class="nav5"><a href="#" title="contact"></a></li>#}
+						</ul>
+					</div><!-- end nav -->
+					<div class="clr"></div><!-- clear float -->
+				</div><!-- end top -->
+				<div id="maincontent">
+					<div class="page" ><!-- HOMEPAGE -->
+					<center><h1 style="font-size:35px; position:relative;left:12px">Espace Administrateur</h1></center>
+					
+					<center><a href="{{path('personnels_afficher')}}">
+					<img style="position:relative;left:12px" src="{{asset('bundles/pfe/admin/images/rh.jpg')}}" width=150 height=150  /></a>
+					</center>
+					
+					
+					{#Fin page hom#}
+					</div><!-- END HOMEPAGE -->
+					
+				</div><!-- end maincontent -->
+			</div><!-- end main -->
+		</div><!-- end bg-content-repeat2 -->
+		</div><!-- end bg-content-repeat1 -->
+		<div id="bg-content-bottom"></div><!-- end bg-content-bottom -->
+	</div><!-- end content -->
+	<div id="glowbottom"></div><!-- end glowbottom -->
+</div>
+<!-- end container -->
+
+</body>
+
+</html>

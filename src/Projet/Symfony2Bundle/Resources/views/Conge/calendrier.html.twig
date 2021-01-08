@@ -1,0 +1,173 @@
+{%extends '::template.html.twig'%}
+
+{%block body%}
+{%block container%}
+
+<div class="page" >
+		<center><h1>Calendrier des jours Fériés</h1></center>
+	
+		<table   width=80% align=center>
+<tr><td colspan=7 align=center>
+                   <select id="mois">
+				      <option value="1">Janvier</option>
+					  <option value="2">Février</option>
+					  <option value="3">Mars</option>
+					  <option value="4">Avril</option>
+					  <option value="5">Mai</option>
+					  <option value="6">Juin</option>
+					  <option value="7">Juillet</option>
+					  <option value="8">Août</option>
+					  <option value="9">Septembre</option>
+					  <option value="10">Octobre</option>
+					  <option value="11">Novembre</option>
+					  <option value="12">Décembre</option>
+				   </select> 2016</td></tr>
+				   </table>
+<div >	
+<table   width=80% align=center id="janv">	
+<tr><td>Janvier</td></tr>		   
+<tr class="mois"><td>Lundi</td><td>Mardi</td><td>Mercredi</td><td>Jeudi</td><td>Vendredi</td><td>Samedi</td><td>Dimanche</td></tr>
+<tr><td> </td><td> </td><td> </td><td> </td><td id="fer">01</td><td>02</td><td class="dim">03</td></tr>
+<tr><td>04</td><td>05</td><td>06</td><td>07</td><td>08</td><td>09</td><td class="dim">10</td></tr>
+<tr><td>11</td><td>12</td><td>13</td><td id="fer">14</td><td>15</td><td>16</td><td class="dim">17</td></tr>
+<tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td class="dim">24</td></tr>
+<tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td class="dim">31</td></tr>
+
+</table>
+</div>
+<div >
+<table   width=80% align=center id="fev">
+<tr><td>Fev</td></tr>				   
+<tr class="mois"><td>Lundi</td><td>Mardi</td><td>Mercredi</td><td>Jeudi</td><td>Vendredi</td><td>Samedi</td><td>Dimanche</td></tr>
+<tr><td>01</td><td>02</td><td>03</td><td>04</td><td>05</td><td>06</td><td class="dim">07</td></tr>
+<tr><td>08</td><td>09</td><td>10</td><td>11</td><td>12</td><td>13</td><td class="dim">14</td></tr>
+<tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td class="dim">21</td></tr>
+<tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td class="dim">28</td></tr>
+<tr><td>29</td><td></td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
+
+</table>
+</div>
+<div >
+<table   width=80% align=center  id="mars">	
+<tr><td>Mars</td></tr>			   
+<tr class="mois"><td>Lundi</td><td>Mardi</td><td>Mercredi</td><td>Jeudi</td><td>Vendredi</td><td>Samedi</td><td>Dimanche</td></tr>
+<tr><td> </td><td>01</td><td>02</td><td>03</td><td>04</td><td>05</td><td class="dim">06</td></tr>
+<tr><td>07</td><td>08</td><td>09</td><td>10</td><td>11</td><td>12</td><td class="dim">13</td></tr>
+<tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td class="dim" id="fer">20</td></tr>
+<tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td class="dim">27</td></tr>
+<tr><td>28</td><td>29</td><td>30</td><td>31</td><td> </td><td> </td><td class="dim"> </td></tr>
+
+</table>
+</div>
+<div >
+<table   width=80% align=center  id="av">
+<tr><td>Avril</td></tr>				   
+<tr class="mois"><td>Lundi</td><td>Mardi</td><td>Mercredi</td><td>Jeudi</td><td>Vendredi</td><td>Samedi</td><td>Dimanche</td></tr>
+<tr><td> </td><td> </td><td> </td><td> </td><td>01</td><td>02</td><td class="dim">03</td></tr>
+<tr><td>04</td><td>05</td><td>06</td><td>07</td><td>08</td><td id="fer">09</td><td class="dim">10</td></tr>
+<tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td class="dim">17</td></tr>
+<tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td class="dim">24</td></tr>
+<tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td class="dim"> </td></tr>
+
+</table>
+</div>
+<div >	
+<table   width=80% align=center  id="mai">
+<tr><td>Mai</td></tr>			   
+<tr class="mois"><td>Lundi</td><td>Mardi</td><td>Mercredi</td><td>Jeudi</td><td>Vendredi</td><td>Samedi</td><td>Dimanche</td></tr>
+<tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td class="dim" id="fer">01</td></tr>
+<tr><td>02</td><td>03</td><td>04</td><td>05</td><td>06</td><td>07</td><td class="dim">08</td></tr>
+<tr><td>09</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td class="dim">15</td></tr>
+<tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td class="dim">22</td></tr>
+<tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td class="dim">29</td></tr>
+<tr><td>30</td><td>31</td><td> </td><td> </td><td> </td><td> </td><td class="dim"> </td></tr>
+</table>
+</div>
+<div >
+<table   width=80% align=center  id="juin">	
+<tr><td>Juin</td></tr>			   
+<tr class="mois"><td>Lundi</td><td>Mardi</td><td>Mercredi</td><td>Jeudi</td><td>Vendredi</td><td>Samedi</td><td>Dimanche</td></tr>
+<tr><td> </td><td> </td><td>01</td><td>02</td><td>03</td><td>04</td><td class="dim">05</td></tr>
+<tr><td>06</td><td>07</td><td>08</td><td>09</td><td>10</td><td>11</td><td class="dim">12</td></tr>
+<tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td class="dim">19</td></tr>
+<tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td class="dim">26</td></tr>
+<tr><td>27</td><td>28</td><td>29</td><td>30</td><td> </td><td> </td><td> </td></tr>
+
+</table>
+</div>
+<div >	
+<table   width=80% align=center  id="juillet">	
+<tr ><td>Juillet</td></tr>		   
+<tr class="mois"><td>Lundi</td><td>Mardi</td><td>Mercredi</td><td>Jeudi</td><td>Vendredi</td><td>Samedi</td><td>Dimanche</td></tr>
+<tr><td> </td><td> </td><td> </td><td> </td><td>01</td><td>02</td><td class="dim">03</td></tr>
+<tr><td>04</td><td>05</td><td id="fer">06</td><td>07</td><td>08</td><td>09</td><td class="dim">10</td></tr>
+<tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td class="dim">17</td></tr>
+<tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td class="dim">24</td></tr>
+<tr><td id="fer">25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td class="dim">31</td></tr>
+
+</table>
+</div>
+<div >	
+<table   width=80% align=center  id="aout">		
+<tr><td>Aout</td></tr>	   
+<tr class="mois"><td>Lundi</td><td>Mardi</td><td>Mercredi</td><td>Jeudi</td><td>Vendredi</td><td>Samedi</td><td>Dimanche</td></tr>
+<tr><td>01</td><td>02</td><td>03</td><td>04</td><td>05</td><td>06</td><td class="dim">07</td></tr>
+<tr><td>08</td><td>09</td><td>10</td><td>11</td><td>12</td><td id="fer">13</td><td class="dim">14</td></tr>
+<tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td class="dim">21</td></tr>
+<tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td class="dim">28</td></tr>
+<tr><td>29</td><td>30</td><td>31</td><td> </td><td> </td><td> </td><td> </td></tr>
+
+</table>
+</div>
+<div >
+<table   width=80% align=center  id="septembre">
+<tr><td>Septembre</td></tr>				   
+<tr class="mois"><td>Lundi</td><td>Mardi</td><td>Mercredi</td><td>Jeudi</td><td>Vendredi</td><td>Samedi</td><td>Dimanche</td></tr>
+<tr><td> </td><td> </td><td> </td><td>01</td><td>02</td><td>03</td><td class="dim">04</td></tr>
+<tr><td>05</td><td>06</td><td>07</td><td>08</td><td>09</td><td>10</td><td class="dim" id="fer">11</td></tr>
+<tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td class="dim">18</td></tr>
+<tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td class="dim">25</td></tr>
+<tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td> </td><td class="dim"> </td></tr>
+
+</table>
+</div>
+<div >
+<table   width=80% align=center  id="octobre">
+<tr><td>Octobre</td></tr>				   
+<tr class="mois"><td>Lundi</td><td>Mardi</td><td>Mercredi</td><td>Jeudi</td><td>Vendredi</td><td>Samedi</td><td>Dimanche</td></tr>
+<tr><td> </td><td> </td><td> </td><td> </td><td> </td><td>01</td><td class="dim">02</td></tr>
+<tr><td>03</td><td>04</td><td>05</td><td>06</td><td>07</td><td>08</td><td class="dim">09</td></tr>
+<tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td id="fer">15</td><td class="dim">16</td></tr>
+<tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td class="dim">23</td></tr>
+<tr><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td class="dim">30</td></tr>
+
+</table>
+</div>
+<div>	
+<table   width=80% align=center  id="novembre">	
+<tr><td>Novembre</td></tr>		   
+<tr class="mois"><td>Lundi</td><td>Mardi</td><td>Mercredi</td><td>Jeudi</td><td>Vendredi</td><td>Samedi</td><td>Dimanche</td></tr>
+<tr><td> </td><td>01</td><td>02</td><td>03</td><td>04</td><td>05</td><td class="dim">06</td></tr>
+<tr><td>07</td><td>08</td><td>09</td><td>10</td><td>11</td><td>12</td><td class="dim">13</td></tr>
+<tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td class="dim">20</td></tr>
+<tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td class="dim">27</td></tr>
+<tr><td>28</td><td>29</td><td>30</td><td> </td><td> </td><td> </td><td> </td></tr>
+
+</table>
+</div>
+<div>
+<table   width=80% align=center  id="decembre">	
+<tr><td>Decempbre</td></tr>			   
+<tr class="mois"><td>Lundi</td><td>Mardi</td><td>Mercredi</td><td>Jeudi</td><td>Vendredi</td><td>Samedi</td><td>Dimanche</td></tr>
+<tr><td> </td><td> </td><td> </td><td>01</td><td>02</td><td>03</td><td class="dim">04</td></tr>
+<tr><td>05</td><td>06</td><td>07</td><td>08</td><td>09</td><td>10</td><td class="dim" id="fer"  >11</td></tr>
+<tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td class="dim">18</td></tr>
+<tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td class="dim">25</td></tr>
+<tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td> </td></tr>
+
+</table>
+</div>
+		
+</div>
+{%endblock%}
+{%endblock%}

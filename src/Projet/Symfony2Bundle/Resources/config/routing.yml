@@ -1,0 +1,78 @@
+pfe_homepage:
+    path:     /rania/{name}
+    defaults: { _controller: pfeBundle:Default:index }
+pfe_template:
+    path:     /index
+    defaults: { _controller: pfeBundle:Default:template }
+personnel_ajout:
+    path:     /form
+    defaults: { _controller: pfeBundle:Personnels:ajoutPersonnels }
+personnel_affichage:
+    path:     /Supprimer
+    defaults: { _controller: pfeBundle:Personnels:recupere_personnels }
+personnels_affichage:
+    path:     /Modifier
+    defaults: { _controller: pfeBundle:Personnels:recupere_personnel }
+personnels_afficher:
+    path:     /affichage
+    defaults: { _controller: pfeBundle:Personnels:affichage_personnel }	
+conge_affichage:
+    path:     /affichage_conge
+    defaults: { _controller: pfeBundle:conge:afficher_conge }
+personnel_delete:
+    path:     /supprimer/{id}
+    defaults: { _controller: pfeBundle:Personnels:delete }
+personnel_update:
+    path:     /modifier/{id}
+    defaults: { _controller: pfeBundle:Personnels:update }
+personnel_connexion:
+    path:     /connexion
+    defaults: { _controller: pfeBundle:Personnels:connexion }
+conge_demande:
+    path:     /demande_conge
+    defaults: { _controller: pfeBundle:conge:demandeConge }
+personnel_deconnexion:
+    path:     /deconnexion
+    defaults: { _controller: pfeBundle:Personnels:deconnexion }
+Admin_Accueil:
+    path:     /accueil
+    defaults: { _controller: pfeBundle:admin:interfaceadmin }
+RH_Accueil:
+    path:     /accueil_RH
+    defaults: { _controller: pfeBundle:admin:interfaceRH }
+pop-up:
+    path:     /popup
+    defaults: { _controller: pfeBundle:Personnels:popup }
+Rh_index:
+    path:     /rh
+    defaults: { _controller: pfeBundle:Personnels:rh }
+pointage_entree:
+    path:     /pointage_entree
+    defaults: { _controller: pfeBundle:pointage:pointage_entree }
+pointage_sortie:
+    path:     /pointage_sortie
+    defaults: { _controller: pfeBundle:pointage:pointageSortie }
+soldeConge:
+    path:     /solde
+    defaults: { _controller: pfeBundle:Personnels:getSoldeConge }
+pointer:
+    path:     /pointer
+    defaults: { _controller: pfeBundle:pointage:pointer }
+pointage_Affiche:
+    path:     /getpointage
+    defaults: { _controller: pfeBundle:pointage:afficher_pointage }
+conge_validation:
+    path:     /validation/{id}
+    defaults: { _controller: pfeBundle:conge:Validation_Conge }
+cause_refuse:
+    path:     /cause_refuse/{id}
+    defaults: { _controller: pfeBundle:conge:cause_refuse }
+validation_refuse:
+    path:     /refuse
+    defaults: { _controller: pfeBundle:conge:refuse_Conge }
+Notification:
+    path:     /notification
+    defaults: { _controller: pfeBundle:conge:notification }
+Calendrier:
+    path:     /calendrier
+    defaults: { _controller: pfeBundle:conge:Calendrier }

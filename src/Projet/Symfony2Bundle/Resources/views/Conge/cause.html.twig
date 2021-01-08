@@ -1,0 +1,40 @@
+{#{%extends '::template.html.twig'%}
+{%block body%}
+
+{%block container%}
+<h1>
+{%if(app.session.get('personnel')!=null)%}
+    {#{{ app.session.get('personnel').code }}#}
+	<center><h1></h1></center>
+	 {%else%}
+	 <script>
+	 alert('vous etes deconnecté');
+	 document.location.href='connexion';
+	 
+	 
+	 </script>
+	
+	
+	{%endif%}<br>
+
+</h1>
+<div class="box box-success" {#style="width:550px"#}>
+            <div class="box-header with-border">
+               <center> <h1 style="color:blue; font-weight:bold">Demande Congé</h1></center>
+            </div>
+            <div class="box-body" style="border:blue 2px solid; width:75%;height:450px; margin:auto">
+	                 <form method=post name="form">
+<textarea name="cause"></textarea>
+<br>
+<span class="input-group-btn" >
+                      <button style="float:right" type="submit" class="btn btn-info btn-flat">Envoyer!</button>
+                    </span>
+
+</form>
+ <!-- /.box-body -->
+          </div>
+		  </div>
+
+					  {%endblock%}
+
+{%endblock%}

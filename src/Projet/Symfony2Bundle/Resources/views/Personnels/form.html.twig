@@ -1,0 +1,57 @@
+{%extends '::template.html.twig'%}
+{%block body%}
+
+{%block container%}
+<h1> {%if(app.session.get('personnel')!=null)%}
+    {#{{ app.session.get('personnel').code }}#}
+	
+	 {%else%}
+	 <script>
+	 alert('vous etes deconnecté');
+	 document.location.href='connexion';
+	 
+	 
+	 </script>
+	
+	
+	{%endif%}
+	
+	</h1>
+	                    <div class="box box-success" {#style="width:550px"#}>
+            <div class="box-header with-border">
+               <center> <h1 style="color:blue; font-weight:bold">Ajouter un Personnel</h1></center>
+            </div>
+            <div class="box-body" style="border:blue 2px solid; width:75%;height:560px; margin:auto">
+			<form method="post">
+			{{form_label(form.nom)}}
+              {{form_widget(form.nom)}}
+			  {{form_label(form.prenom)}}
+              {{form_widget(form.prenom)}}
+			   {{form_label(form.profil)}}
+              {{form_widget(form.profil)}}
+			  <br>
+			 <div id="manager"> Manager
+			  <select class="form-control input-lg"  name="manager">
+			     {%for mng in manager%}
+				   <option value="{{mng.id}}">{{mng.nom}} {{mng.prenom}}</option>
+				 
+				 {%endfor%}
+				 </select>
+				 </div>
+				  {{form_label(form.code)}}
+              {{form_widget(form.code)}}
+			  {{form_label(form.mdp)}}
+              {{form_widget(form.mdp)}}
+			  {{form_label(form.date_entree)}}
+              {{form_widget(form.date_entree)}}
+			 <span class="input-group-btn" >
+                      <button style="float:right; position:relative;top:12px" type="submit" class="btn btn-info btn-flat">Ajouter!</button>
+                    </span>
+			</form>
+            <!-- /.box-body -->
+          </div>
+		  </div>
+          <!-- /.box -->
+					  {%endblock%}
+
+{%endblock%}

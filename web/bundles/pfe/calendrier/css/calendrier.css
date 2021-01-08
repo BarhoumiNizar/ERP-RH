@@ -1,0 +1,10 @@
+#fev,#mars,#av,#mai,#juin,#juillet,#aout,#septembre,#octobre,#novembre,#decembre{display:none}
+.page table tr{border-bottom:3px black solid;
+          font-size:25px;
+		  color:green;
+		  }
+.page table tr td{text-align:center;}
+#mois{margin-bottom:25px}
+.mois{color:red}
+.dim{color:blue}
+#fer{background:red}

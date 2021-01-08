@@ -1,0 +1,22 @@
+{%extends '::templates.html.twig'%}
+{%block body%}
+{%block container%}
+<div class="box box-success" {#style="width:550px"#}>
+            <div class="box-header with-border">
+               <center> <h1 style="color:blue; font-weight:bold">Ajouter un Personnel</h1></center>
+            </div>
+            <div class="box-body" style="border:blue 2px solid; width:75%;height:510px; margin:auto">
+<form method=post>
+
+{{form_widget(form)}}
+<span class="input-group-btn" >
+                      <button style="float:right; position:relative;top:12px" type="submit" class="btn btn-info btn-flat">Envoyer</button>
+                    </span>
+			</form>
+            <!-- /.box-body -->
+          </div>
+		  </div>
+
+
+{%endblock%}
+{%endblock%}
